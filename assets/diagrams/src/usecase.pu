@@ -1,0 +1,28 @@
+@startuml usecase
+left to right direction
+
+:Student: as student
+:Vyučující: as vyucujici
+:TurnItIn: << System >> as turnitin 
+:Studijní IS: << System >> as sis
+
+rectangle "Systém hodnocení studentských programovacích úloh" {
+   (Vytvoření zadání úlohy) as vytvoreni_ulohy
+   (Úprava zadání úlohy) as uprava_ulohy
+   (Nahrání a vyhodnocení vypracované úlohy) as nahrat_vyhodnotit_ulohu
+   (Kontrola plagiátorství) as antiplag_kontrola
+   (Uložení výsledku) as ulozeni_vysledku
+  (Přihlášení) as login
+}
+
+student --> login
+student --> nahrat_vyhodnotit_ulohu
+
+vyucujici --> login
+vyucujici --> vytvoreni_ulohy
+vyucujici --> uprava_ulohy
+
+login <--> sis
+ulozeni_vysledku --> sis
+antiplag_kontrola --> turnitin
+@enduml
