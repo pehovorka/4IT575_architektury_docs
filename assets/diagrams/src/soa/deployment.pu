@@ -1,0 +1,51 @@
+@startuml
+skinparam linetype polyline
+
+cloud "Google Cloud Platform" as gcp <<cloud provider>> {
+    node "CloudSQL" as cloudsql <<DBaaS environment>> {
+        node "PostgreSQL" as pgsql <<DBMS>> {
+            database "DB systému hodnocení studentských prog. úloh"
+        }
+    }
+    node "Cloud Run" as run <<execution environment>> {
+        node "Web API container" as webApi <<docker container>> {
+            artifact "Aplikace web API" <<application>>
+        }
+        node "Node.js runtime env container" as nodeEnv <<docker container>>{
+            artifact "Aplikace node.js runtime" <<application>>
+        }
+        node "Python runtime env container" as pythonEnv <<docker container>>{
+            artifact "Aplikace Python runtime" <<application>>
+        }
+        node "Java runtime env container" as javaEnv <<docker container>>{
+            artifact "Aplikace Java runtime" <<application>>
+        }
+
+    }
+    node "Firebase Hosting" as firebase <<execution environment>> {
+        artifact "Frontend React aplikace" <<application>>
+    }
+
+}
+
+node "Zařízení uživatele aplikace" as userDevice
+node "Server studijího IS" as studyISServer
+node "Server TurnItIn" as turnitinServer
+
+webApi -- cloudsql : ODBC
+webApi -- nodeEnv : HTTP
+webApi -- pythonEnv : HTTP
+webApi -- javaEnv : HTTP
+
+firebase -- userDevice : HTTP
+webApi -- studyISServer : HTTP
+webApi -- turnitinServer : HTTP
+webApi -- firebase : HTTP
+
+cloudsql -[hidden]- firebase
+cloudsql -[hidden]- run
+
+
+
+
+@enduml
