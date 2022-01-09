@@ -9,7 +9,7 @@ cloud "Google Cloud Platform" as gcp <<cloud provider>> {
     }
     node "Cloud Run" as run <<execution environment>> {
         node "Web API container" as webApi <<docker container>> {
-            artifact "Aplikace web API" <<application>>
+            artifact "Aplikace webového API" <<application>>
         }
         node "Node.js runtime env container" as nodeEnv <<docker container>>{
             artifact "Aplikace node.js runtime" <<application>>
@@ -32,7 +32,7 @@ node "Zařízení uživatele aplikace" as userDevice
 node "Server studijího IS" as studyISServer
 node "Server TurnItIn" as turnitinServer
 
-webApi -- cloudsql : ODBC
+webApi -- cloudsql : HTTP
 webApi -- nodeEnv : HTTP
 webApi -- pythonEnv : HTTP
 webApi -- javaEnv : HTTP

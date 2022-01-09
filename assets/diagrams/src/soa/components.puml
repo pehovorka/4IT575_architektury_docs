@@ -1,0 +1,60 @@
+@startuml
+skinparam linetype ortho
+
+rectangle "Frontend aplikace" <<application>> as frontendApp {
+    component "GraphQL klient" as graphqlClient
+}
+
+rectangle "Aplikace webového API" <<application>> as webApiApp {
+    component "GraphQL server" as graphqlServer
+    component "Antiplagiátorská služba" as antiplagiarismService
+    component "Auth služba" as authService
+    component "Služba synchronizace studijních výsledků" as gradingSyncService
+    component "Služba spouštění a hodnocení běhů úloh" as assesmentRuntimeAndEvaluationService
+    component "Služba vytváření a editace zadání" as assessmentCreationService
+    component "Služba uploadu vypracovaných úloh" as uploadService
+    component "ORM" as ORM
+
+    interface "GraphQL endpoint" as graphqlInterface
+}
+
+rectangle "PostgreSQL" <<DBMS>> {
+    component "Databáze" as DB
+}
+
+
+interface "TurItIn API" as turnitinAPI
+interface "Studijní IS SSO API" as studyISSSO
+interface "Studijní IS API" as studyISAPI
+interface "DB rozhraní" as dbInterface
+
+
+graphqlClient --( graphqlInterface
+graphqlInterface ..> graphqlServer
+
+graphqlServer ..> assessmentCreationService
+graphqlServer ..> assesmentRuntimeAndEvaluationService
+graphqlServer ..> authService
+graphqlServer ..> uploadService
+
+assesmentRuntimeAndEvaluationService -(0- gradingSyncService
+assesmentRuntimeAndEvaluationService -(0- antiplagiarismService
+
+
+antiplagiarismService --( turnitinAPI
+authService --( studyISSSO
+gradingSyncService --( studyISAPI
+
+assessmentCreationService ..> ORM
+assesmentRuntimeAndEvaluationService ..> ORM
+uploadService ..> ORM
+gradingSyncService ..> ORM
+antiplagiarismService ..> ORM
+authService ..> ORM
+
+
+ORM --( dbInterface
+dbInterface -- DB
+
+
+@enduml

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="960px" preserveAspectRatio="none" style="width:1258px;height:960px;background:#FFFFFF;" version="1.1" viewBox="0 0 1258 960" width="1258px" zoomAndPan="magnify"><defs><filter height="300%" id="faftsaqeftx69" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[5ba97dfc93e0da7ae6875ba9fe947768]
+cluster frontendApp--><rect fill="#FFFFFF" filter="url(#faftsaqeftx69)" height="113" style="stroke:#000000;stroke-width:1.5;" width="174" x="412" y="7"/><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="90" x="454" y="22.5352">«application»</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="128" x="435" y="39.0234">Frontend aplikace</text><!--MD5=[92e9c140242cecca48ef8c6e28b368e0]
+cluster webApiApp--><rect fill="#FFFFFF" filter="url(#faftsaqeftx69)" height="567" style="stroke:#000000;stroke-width:1.5;" width="1003" x="7" y="144"/><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="90" x="463.5" y="159.5352">«application»</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="167" x="425" y="176.0234">Aplikace webového API</text><!--MD5=[e9cbb9dd88ded91326c7c57ecf0f8dfc]
+cluster PostgreSQL--><rect fill="#FFFFFF" filter="url(#faftsaqeftx69)" height="113" style="stroke:#000000;stroke-width:1.5;" width="136" x="362" y="835"/><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="52" x="404" y="850.5352">«DBMS»</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="83" x="388.5" y="867.0234">PostgreSQL</text><!--MD5=[0de833582c25d4679d852108d405f6b3]
+entity graphqlClient--><rect fill="#FEFECE" filter="url(#faftsaqeftx69)" height="46.4883" style="stroke:#A80036;stroke-width:1.5;" width="142" x="428" y="58"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="550" y="63"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="548" y="65"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="548" y="69"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="102" x="443" y="91.5352">GraphQL klient</text><!--MD5=[85e163b7a63b23b00f6f1f465de18eb0]
+entity graphqlServer--><rect fill="#FEFECE" filter="url(#faftsaqeftx69)" height="46.4883" style="stroke:#A80036;stroke-width:1.5;" width="146" x="426" y="313"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="552" y="318"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="550" y="320"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="550" y="324"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="106" x="441" y="346.5352">GraphQL server</text><!--MD5=[32fe6ba112842f86d4ba43b0856a2543]
+entity antiplagiarismService--><rect fill="#FEFECE" filter="url(#faftsaqeftx69)" height="46.4883" style="stroke:#A80036;stroke-width:1.5;" width="202" x="398" y="531"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="580" y="536"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="578" y="538"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="578" y="542"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="162" x="413" y="564.5352">Antiplagiátorská služba</text><!--MD5=[964c0d3ad02cffe71d1434cdfe3710e1]
+entity authService--><rect fill="#FEFECE" filter="url(#faftsaqeftx69)" height="46.4883" style="stroke:#A80036;stroke-width:1.5;" width="122" x="872" y="419"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="974" y="424"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="972" y="426"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="972" y="430"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="82" x="887" y="452.5352">Auth služba</text><!--MD5=[8dce557c27a55e3fcbb7c673dbe0873f]
+entity gradingSyncService--><rect fill="#FEFECE" filter="url(#faftsaqeftx69)" height="46.4883" style="stroke:#A80036;stroke-width:1.5;" width="322" x="635" y="531"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="937" y="536"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="935" y="538"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="935" y="542"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="282" x="650" y="564.5352">Služba synchronizace studijních výsledků</text><!--MD5=[22357f1902dafc45980e864b21d199c2]
+entity assesmentRuntimeAndEvaluationService--><rect fill="#FEFECE" filter="url(#faftsaqeftx69)" height="46.4883" style="stroke:#A80036;stroke-width:1.5;" width="320" x="508" y="419"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="808" y="424"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="806" y="426"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="806" y="430"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="280" x="523" y="452.5352">Služba spouštění a hodnocení běhů úloh</text><!--MD5=[d07e055a63d629ad1386a2aa78186446]
+entity assessmentCreationService--><rect fill="#FEFECE" filter="url(#faftsaqeftx69)" height="46.4883" style="stroke:#A80036;stroke-width:1.5;" width="266" x="23" y="531"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="269" y="536"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="267" y="538"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="267" y="542"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="226" x="38" y="564.5352">Služba vytváření a editace zadání</text><!--MD5=[21c76b3bb3fefc39ffcba9d93b385949]
+entity uploadService--><rect fill="#FEFECE" filter="url(#faftsaqeftx69)" height="46.4883" style="stroke:#A80036;stroke-width:1.5;" width="286" x="187" y="419"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="453" y="424"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="451" y="426"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="451" y="430"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="246" x="202" y="452.5352">Služba uploadu vypracovaných úloh</text><!--MD5=[98debdbd1e7fc65cc980069a5574c645]
+entity ORM--><rect fill="#FEFECE" filter="url(#faftsaqeftx69)" height="46.4883" style="stroke:#A80036;stroke-width:1.5;" width="72" x="394" y="649"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="446" y="654"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="444" y="656"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="444" y="660"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="32" x="409" y="682.5352">ORM</text><!--MD5=[f70377a6f75ab1c3d020bd5cd2f42dba]
+entity graphqlInterface--><ellipse cx="499" cy="224" fill="#FEFECE" filter="url(#faftsaqeftx69)" rx="8" ry="8" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="126" x="436" y="254.5352">GraphQL endpoint</text><!--MD5=[f9ba5bf973e7832d2ce5ed59077b93f7]
+entity DB--><rect fill="#FEFECE" filter="url(#faftsaqeftx69)" height="46.4883" style="stroke:#A80036;stroke-width:1.5;" width="104" x="378" y="886"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="462" y="891"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="460" y="893"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="460" y="897"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="64" x="393" y="919.5352">Databáze</text><!--MD5=[2ab76fb706450712c91adb829edbbfcf]
+entity turnitinAPI--><ellipse cx="1070" cy="672" fill="#FEFECE" filter="url(#faftsaqeftx69)" rx="8" ry="8" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="72" x="1034" y="702.5352">TurItIn API</text><!--MD5=[98be41c17f76105a221754a7e6d3eca9]
+entity studyISSSO--><ellipse cx="1099" cy="554" fill="#FEFECE" filter="url(#faftsaqeftx69)" rx="8" ry="8" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="125" x="1036.5" y="584.5352">Studijní IS SSO API</text><!--MD5=[e0bc2a5e4f5aa14651eda1fc0b3fa2e3]
+entity studyISAPI--><ellipse cx="1204" cy="672" fill="#FEFECE" filter="url(#faftsaqeftx69)" rx="8" ry="8" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="94" x="1157" y="702.5352">Studijní IS API</text><!--MD5=[4d44f0f00f97307a9978883fb0287af6]
+entity dbInterface--><ellipse cx="430" cy="790" fill="#FEFECE" filter="url(#faftsaqeftx69)" rx="8" ry="8" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="81" x="389.5" y="820.5352">DB rozhraní</text><!--MD5=[37d9fdd5eaf0d708d79b0c83da263b33]
+link graphqlClient to graphqlInterface--><path d="M499,104.29 C499,104.29 499,204.86 499,204.86 " fill="none" id="graphqlClient-to-graphqlInterface" style="stroke:#A80036;stroke-width:1.0;"/><path d="M507.4572,211.7818 A9,9 0 0 0 490.5428 211.7818" style="stroke:#A80036;stroke-width:1.5;fill:none;"/><!--MD5=[0fbe12f4a72430e35bc57e9048868135]
+link graphqlInterface to graphqlServer--><path d="M499,233.17 C499,233.17 499,307.79 499,307.79 " fill="none" id="graphqlInterface-to-graphqlServer" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="499,312.79,503,303.79,499,307.79,495,303.79,499,312.79" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[d90d2bf15cd081a7db54cfb32db4051e]
+link graphqlServer to assessmentCreationService--><path d="M425.81,336 C311.87,336 105,336 105,336 C105,336 105,525.67 105,525.67 " fill="none" id="graphqlServer-to-assessmentCreationService" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="105,530.67,109,521.67,105,525.67,101,521.67,105,530.67" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[007b690867d56ce0e382be30b8d990e6]
+link graphqlServer to assesmentRuntimeAndEvaluationService--><path d="M540,359 C540,359 540,413.68 540,413.68 " fill="none" id="graphqlServer-to-assesmentRuntimeAndEvaluationService" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="540,418.68,544,409.68,540,413.68,536,409.68,540,418.68" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[8e5f7942ea59c4942df7f56cd8b450cf]
+link graphqlServer to authService--><path d="M572.13,336 C695.82,336 933,336 933,336 C933,336 933,414 933,414 " fill="none" id="graphqlServer-to-authService" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="933,419,937,410,933,414,929,410,933,419" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[156e6b911acd2204154eaacc30923df1]
+link graphqlServer to uploadService--><path d="M449.5,359 C449.5,359 449.5,413.68 449.5,413.68 " fill="none" id="graphqlServer-to-uploadService" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="449.5,418.68,453.5,409.68,449.5,413.68,445.5,409.68,449.5,418.68" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[4a61994cfa60b687ff7204bd8d1a0fe9]
+link assesmentRuntimeAndEvaluationService to gradingSyncService--><path d="M731.5,465.21 C731.5,484.43 731.5,511.61 731.5,530.82 " fill="none" id="assesmentRuntimeAndEvaluationService-gradingSyncService" style="stroke:#A80036;stroke-width:1.0;"/><path d="M738.5711,490.9477 A10,10 0 0 0 724.4289 490.9477" style="stroke:#A80036;stroke-width:1.5;fill:none;"/><ellipse cx="731.5" cy="498.0187" fill="#FFFFFF" rx="6" ry="6" style="stroke:#A80036;stroke-width:1.5;"/><!--MD5=[c800f91102a9710430056fe2de854441]
+link assesmentRuntimeAndEvaluationService to antiplagiarismService--><path d="M554,465.21 C554,484.43 554,511.61 554,530.82 " fill="none" id="assesmentRuntimeAndEvaluationService-antiplagiarismService" style="stroke:#A80036;stroke-width:1.0;"/><path d="M561.0711,490.9477 A10,10 0 0 0 546.9289 490.9477" style="stroke:#A80036;stroke-width:1.5;fill:none;"/><ellipse cx="554" cy="498.0187" fill="#FFFFFF" rx="6" ry="6" style="stroke:#A80036;stroke-width:1.5;"/><!--MD5=[b98ac0455033223fc477fb415251401c]
+link antiplagiarismService to turnitinAPI--><path d="M541,577.04 C541,607.95 541,659 541,659 C541,659 1059.9,659 1059.9,659 " fill="none" id="antiplagiarismService-to-turnitinAPI" style="stroke:#A80036;stroke-width:1.0;"/><path d="M1066.8218,650.5428 A9,9 0 0 0 1066.8218 667.4572" style="stroke:#A80036;stroke-width:1.5;fill:none;"/><!--MD5=[1047f9a521d29ced092ab437afc7fdf3]
+link authService to studyISSSO--><path d="M981.67,465.21 C981.67,498.01 981.67,554 981.67,554 C981.67,554 1079.79,554 1079.79,554 " fill="none" id="authService-to-studyISSSO" style="stroke:#A80036;stroke-width:1.0;"/><path d="M1086.7118,545.5428 A9,9 0 0 0 1086.7118 562.4572" style="stroke:#A80036;stroke-width:1.5;fill:none;"/><!--MD5=[0b9b18cfb343f5652a442f756f0929ff]
+link gradingSyncService to studyISAPI--><path d="M849.67,577.32 C849.67,593.81 849.67,613 849.67,613 C849.67,613 1159,613 1159,613 C1159,613 1159,661.83 1159,661.83 " fill="none" id="gradingSyncService-to-studyISAPI" style="stroke:#A80036;stroke-width:1.0;"/><path d="M1167.4572,668.7518 A9,9 0 0 0 1150.5428 668.7518" style="stroke:#A80036;stroke-width:1.5;fill:none;"/><!--MD5=[2bf59e39e8d478b692c8ae91b8acf9a4]
+link assessmentCreationService to ORM--><path d="M156,577.27 C156,609.82 156,665 156,665 C156,665 388.9,665 388.9,665 " fill="none" id="assessmentCreationService-to-ORM" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="393.9,665,384.9,661,388.9,665,384.9,669,393.9,665" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[9046b02e8edeb6e0af9a300839f25861]
+link assesmentRuntimeAndEvaluationService to ORM--><path d="M617.5,465.33 C617.5,523.08 617.5,668 617.5,668 C617.5,668 471.15,668 471.15,668 " fill="none" id="assesmentRuntimeAndEvaluationService-to-ORM" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="466.15,668,475.15,672,471.15,668,475.15,664,466.15,668" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[e0669c5703e41ba64ad6664932d2a36d]
+link uploadService to ORM--><path d="M388,465.25 C388,525.14 388,680 388,680 C388,680 388.84,680 388.84,680 " fill="none" id="uploadService-to-ORM" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="393.84,680,384.84,676,388.84,680,384.84,684,393.84,680" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[15400ed87d8b469d4fa034dd78284aa5]
+link gradingSyncService to ORM--><path d="M742.33,577.14 C742.33,612.77 742.33,677 742.33,677 C742.33,677 471.13,677 471.13,677 " fill="none" id="gradingSyncService-to-ORM" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="466.13,677,475.13,681,471.13,677,475.13,673,466.13,677" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[abab53b5611140563764686923f6cd2a]
+link antiplagiarismService to ORM--><path d="M432,577.03 C432,577.03 432,643.62 432,643.62 " fill="none" id="antiplagiarismService-to-ORM" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="432,648.62,436,639.62,432,643.62,428,639.62,432,648.62" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[41fe95b759598785d1aac63872c7860d]
+link authService to ORM--><path d="M969.33,465.4 C969.33,526.47 969.33,686 969.33,686 C969.33,686 471.22,686 471.22,686 " fill="none" id="authService-to-ORM" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="466.22,686,475.22,690,471.22,686,475.22,682,466.22,686" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[e17aa2c41e345d69f1b1708c7153489c]
+link ORM to dbInterface--><path d="M430,695.03 C430,695.03 430,770.85 430,770.85 " fill="none" id="ORM-to-dbInterface" style="stroke:#A80036;stroke-width:1.0;"/><path d="M438.4572,777.7718 A9,9 0 0 0 421.5428 777.7718" style="stroke:#A80036;stroke-width:1.5;fill:none;"/><!--MD5=[401a5150b8fb334527fbdce59a78c4d8]
+link dbInterface to DB--><path d="M430,799.34 C430,817.75 430,859.22 430,885.56 " fill="none" id="dbInterface-DB" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[85df7ccc286a232711c02219444e26a6]
+@startuml
+skinparam linetype ortho
+
+rectangle "Frontend aplikace" <<application>> as frontendApp {
+    component "GraphQL klient" as graphqlClient
+}
+
+rectangle "Aplikace webového API" <<application>> as webApiApp {
+    component "GraphQL server" as graphqlServer
+    component "Antiplagiátorská služba" as antiplagiarismService
+    component "Auth služba" as authService
+    component "Služba synchronizace studijních výsledků" as gradingSyncService
+    component "Služba spouštění a hodnocení běhů úloh" as assesmentRuntimeAndEvaluationService
+    component "Služba vytváření a editace zadání" as assessmentCreationService
+    component "Služba uploadu vypracovaných úloh" as uploadService
+    component "ORM" as ORM
+
+    interface "GraphQL endpoint" as graphqlInterface
+}
+
+rectangle "PostgreSQL" <<DBMS>> {
+    component "Databáze" as DB
+}
+
+
+interface "TurItIn API" as turnitinAPI
+interface "Studijní IS SSO API" as studyISSSO
+interface "Studijní IS API" as studyISAPI
+interface "DB rozhraní" as dbInterface
+
+
+graphqlClient - -( graphqlInterface
+graphqlInterface ..> graphqlServer
+
+graphqlServer ..> assessmentCreationService
+graphqlServer ..> assesmentRuntimeAndEvaluationService
+graphqlServer ..> authService
+graphqlServer ..> uploadService
+
+assesmentRuntimeAndEvaluationService -(0- gradingSyncService
+assesmentRuntimeAndEvaluationService -(0- antiplagiarismService
+
+
+antiplagiarismService - -( turnitinAPI
+authService - -( studyISSSO
+gradingSyncService - -( studyISAPI
+
+assessmentCreationService ..> ORM
+assesmentRuntimeAndEvaluationService ..> ORM
+uploadService ..> ORM
+gradingSyncService ..> ORM
+antiplagiarismService ..> ORM
+authService ..> ORM
+
+
+ORM - -( dbInterface
+dbInterface - - DB
+
+
+@enduml
+
+PlantUML version 1.2021.16(Wed Dec 08 18:25:22 CET 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: cs
+Country: CZ
+--></g></svg>
