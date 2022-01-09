@@ -2,7 +2,7 @@
 
 ## UML diagram nasazení
 
-![Deployment diagram](/assets/diagrams/out/soa/deployment/deployment.svg)
+![Deployment diagram](/assets/diagrams/out/soa/deployment/deployment.png)
 
 ## Katalog elementů
 

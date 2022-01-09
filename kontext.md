@@ -17,4 +17,4 @@ V systému vystupují tyto 3 aplikace:
 
 ## Případy užití
 
-![Use Case](assets/diagrams/out/usecase/usecase.svg)
+![Use Case](assets/diagrams/out/usecase/usecase.png)

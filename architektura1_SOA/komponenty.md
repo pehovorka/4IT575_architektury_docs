@@ -2,4 +2,4 @@
 
 ## UML diagram komponent
 
-![Components diagram](/assets/diagrams/out/soa/components/components.svg)
+![Components diagram](/assets/diagrams/out/soa/components/components.png)
