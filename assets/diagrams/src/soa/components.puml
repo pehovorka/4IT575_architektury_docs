@@ -18,6 +18,10 @@ rectangle "Aplikace webového API" <<application>> as webApiApp {
     interface "GraphQL endpoint" as graphqlInterface
 }
 
+rectangle "Aplikace {environment} runtime" <<application>> as runtimeEnv {
+    component "Služba běhu zdrojového kódu" as runtimeService
+}
+
 rectangle "PostgreSQL" <<DBMS>> {
     component "Databáze" as DB
 }
@@ -39,6 +43,9 @@ graphqlServer ..> uploadService
 
 assesmentRuntimeAndEvaluationService -(0- gradingSyncService
 assesmentRuntimeAndEvaluationService -(0- antiplagiarismService
+
+assesmentRuntimeAndEvaluationService -u(0- runtimeService
+assessmentCreationService -u(0- runtimeService
 
 
 antiplagiarismService --( turnitinAPI
