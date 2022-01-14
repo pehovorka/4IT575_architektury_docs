@@ -3,7 +3,7 @@
 - ID: 1
 - Datum: 9. 1. 2022
 
-## Status
+## Stav
 
 Schváleno.
 
