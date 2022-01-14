@@ -9,12 +9,12 @@ Schváleno.
 
 ## Kontext
 
-TBD
+Je nutné zvolit architekturu pro novou aplikaci sloužící k automatizovanému hodnocení studentských programátorských úloh.
 
 ## Rozhodnutí
 
-TBD
+Bylo rozhodnuto, že základem architektury aplikace bude Service Oriented Architecture (SOA). Webový server bude poskytovat API pro frontendovou aplikaci (SPA), která bude hostována odděleně a bude běžet přímo v prohlížeči uživatele (nebude renderována na serveru).
 
 ## Důsledky
 
-TBD
+Pro komunikaci webového serveru a frontendové aplikace bude nutné zvolit způsob výměny dat ([#2](2_rest_graphql_grpc.md)).
