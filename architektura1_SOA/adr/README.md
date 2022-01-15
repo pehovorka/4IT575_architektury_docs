@@ -6,7 +6,6 @@
 1. [REST vs. GraphGL vs. gRPC](2_rest_graphql_grpc.md)
 1. [Výběr programovacích jazyků](3_programovaci_jazyky.md)
 1. [Strategie sdílení typů mezi FE a BE aplikacemi](4_strategie_sdileni_typu_fe_be.md)
-1. Přístup k automatizovanému testování
-   - TODO: BE – unit, integration – Jest, load – k6; E2E – Cypress
+1. [Přístup k automatizovanému testování](5_automatizace_testovani.md)
 1. Nasazení systému
    - TODO: CI/CD, envs
