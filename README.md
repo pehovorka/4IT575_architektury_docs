@@ -8,3 +8,4 @@
   - [Architektonická rozhodnutí (ADR)](architektura1_SOA/adr/README.md)
   - [Komponenty](architektura1_SOA/komponenty.md)
   - [Nasazení](architektura1_SOA/nasazeni.md)
+  - [Balíčky](architektura1_SOA/balicky.md)
