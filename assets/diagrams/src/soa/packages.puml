@@ -22,7 +22,16 @@ package "webAPI" as apiApp {
     folder utils as BEUtils
     folder migrations as migrations
     folder seeds as seeds
-    folder monitoring as monitoring
+    folder monitoring as BEMonitoring
+}
+
+package "envirnomentRuntime" as envRuntime {
+    folder services as runtimeServices
+    folder tests as runtimeTests
+    folder utils as runtimeUtils
+    folder constants as runtimeConstants
+    folder config as runtimeConfig
+    folder monitoring as runtimeMonitoring
 }
 
 package "shared" as sharedRepo {
@@ -49,6 +58,8 @@ apiApp ..> logging: <<use>>
 apiApp ..> db: <<use>>
 
 frontendApp .up.> apiApp: <<use>>
+
+apiApp .right.> envRuntime: <<use>>
 
 
 @enduml
