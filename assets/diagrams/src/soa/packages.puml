@@ -1,5 +1,4 @@
 @startuml
-
 package "frontendApp" as frontendApp {
     folder components as FEComponents
     folder hooks as hooks
@@ -48,6 +47,8 @@ frontendApp ..> logging: <<use>>
 apiApp ..> logging: <<use>>
 
 apiApp ..> db: <<use>>
+
+frontendApp .up.> apiApp: <<use>>
 
 
 @enduml
