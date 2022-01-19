@@ -24,6 +24,8 @@ Node.js aplikace webového serveru, která se stará o provoz GraphQL serveru pr
 
 - **Služba synchronizace studijních výsledků** - synchronizuje výsledky běhů s _API studijního IS_
 
+- **ORM** – služba objektově-relačního mapování
+
 ### Frontend aplikace
 
 Single-page aplikace vytvořená pomocí JS knihovny React, která komunikuje s webovým API pomocí dotazovacího jazyka GraphQL.
