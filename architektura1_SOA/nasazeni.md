@@ -58,6 +58,10 @@ Web hosting vhodný pro single-page aplikace.
 
 Single-page aplikace vytvořená pomocí JS knihovny React, která komunikuje s webovým API pomocí dotazovacího jazyka GraphQL. Statické soubory jsou uloženy na Firebase Hostingu a samotná aplikace běží ve webovém prohlížeči uživatele.
 
+### Cloud Storage
+
+Webová služba úložiště.
+
 ## Kód diagramu
 
 PlantUML kód je k dispozici [zde](/assets/diagrams/src/soa/deployment.puml).
