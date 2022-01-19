@@ -4,7 +4,7 @@
 
 ![Components diagram](/assets/diagrams/out/eda/components/components.png)
 
-## Katalog elementov
+## Katalog elementů
 
 ### Aplikačný server
 
