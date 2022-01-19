@@ -1,0 +1,56 @@
+@startuml
+component "Frontend aplikácia" <<application>> as frontendApp
+
+package Backend {
+    component "Webový server" as webServer <<subsystem>> {
+        component "Mediátor" as mediator
+    }
+
+component "Aplikačný server" as appServer <<subsystem>> {
+    component "Antiplagiátorská služba" as antiplagiarismService
+    component "Auth služba" as authService
+    component "Služba synchronizace studijních výsledků" as gradingSyncService
+    component "Služba spouštění a hodnocení běhů úloh" as assesmentRuntimeAndEvaluationService
+    component "Služba vytváření a editace zadání" as assessmentCreationService
+    component "Služba uploadu vypracovaných úloh" as uploadService
+    component "ORM" as ORM
+    }
+
+rectangle "Aplikace Node/Python/Java runtime" <<application>> as runtimeEnv {
+    component "Služba běhu zdrojového kódu" as runtimeService
+}
+
+rectangle "PostgreSQL" <<DBMS>> {
+    component "Databáze" as DB
+}
+
+rectangle "Cloud Storage" <<storage>> {
+    component "Úložiště" as storage
+}
+
+interface "Rozhraní úložiště" as storageInterface
+}
+
+interface "TurItIn API" as turnitinAPI
+interface "Studijní IS SSO API" as studyISSSO
+interface "Studijní IS API" as studyISAPI
+
+assesmentRuntimeAndEvaluationService ..> ORM
+assessmentCreationService ..> ORM
+uploadService ..> ORM
+gradingSyncService ..> ORM
+antiplagiarismService ..> ORM
+authService ..> ORM
+
+antiplagiarismService --( turnitinAPI
+authService --( studyISSSO
+gradingSyncService --( studyISAPI
+
+frontendApp -right(0- webServer
+webServer -- appServer
+ORM -down(0- DB
+
+uploadService -up-( storageInterface
+runtimeService --( storageInterface
+storageInterface -down- storage
+@enduml
