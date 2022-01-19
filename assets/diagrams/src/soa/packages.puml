@@ -25,7 +25,7 @@ package "webAPI" as apiApp {
     folder monitoring as BEMonitoring
 }
 
-package "envirnomentRuntime" as envRuntime {
+package "node/python/javaRuntime" as envRuntime {
     folder services as runtimeServices
     folder tests as runtimeTests
     folder utils as runtimeUtils
