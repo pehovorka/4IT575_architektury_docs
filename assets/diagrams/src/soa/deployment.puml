@@ -1,5 +1,4 @@
 @startuml
-skinparam linetype polyline
 
 cloud "Google Cloud Platform" as gcp <<cloud provider>> {
     node "CloudSQL" as cloudsql <<DBaaS environment>> {
@@ -26,6 +25,10 @@ cloud "Google Cloud Platform" as gcp <<cloud provider>> {
         artifact "Frontend React aplikace" <<application>>
     }
 
+    node "Cloud Storage" as storage <<storage>> {
+        storage "Úložiště"
+    }
+
 }
 
 node "Zařízení uživatele aplikace" as userDevice
@@ -45,6 +48,10 @@ webApi -- firebase : HTTP
 cloudsql -[hidden]- firebase
 cloudsql -[hidden]- run
 
+webApi -- storage : HTTP
+nodeEnv -- storage: HTTP
+pythonEnv -- storage: HTTP
+javaEnv -- storage: HTTP
 
 
 

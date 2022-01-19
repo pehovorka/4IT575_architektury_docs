@@ -60,4 +60,4 @@ Single-page aplikace vytvořená pomocí JS knihovny React, která komunikuje s 
 
 ## Kód diagramu
 
-PlantUML kód je k dispozici [zde](/assets/diagrams/src/soa/deployment.pu).
+PlantUML kód je k dispozici [zde](/assets/diagrams/src/soa/deployment.puml).

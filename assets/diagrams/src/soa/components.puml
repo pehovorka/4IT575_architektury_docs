@@ -1,6 +1,4 @@
 @startuml
-skinparam linetype ortho
-
 rectangle "Frontend aplikace" <<application>> as frontendApp {
     component "GraphQL klient" as graphqlClient
 }
@@ -26,11 +24,15 @@ rectangle "PostgreSQL" <<DBMS>> {
     component "Databáze" as DB
 }
 
+rectangle "Cloud Storage" <<storage>> {
+    component "Úložiště" as storage
+}
 
 interface "TurItIn API" as turnitinAPI
 interface "Studijní IS SSO API" as studyISSSO
 interface "Studijní IS API" as studyISAPI
 interface "DB rozhraní" as dbInterface
+interface "Rozhraní úložiště" as storageInterface
 
 
 graphqlClient --( graphqlInterface
@@ -62,6 +64,10 @@ authService ..> ORM
 
 ORM --( dbInterface
 dbInterface -- DB
+
+uploadService -up-( storageInterface
+runtimeService --( storageInterface
+storageInterface -down- storage
 
 
 @enduml
