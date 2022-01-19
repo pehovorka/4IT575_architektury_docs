@@ -10,3 +10,9 @@
   - [Nasazení](architektura1_SOA/nasazeni.md)
   - [Balíčky](architektura1_SOA/balicky.md)
   - [Vyhodnocení](architektura1_SOA/vyhodnoceni.md)
+- Architektura 2 – EDA
+  - [Architektonická rozhodnutí (ADR)](architektura2_EDA/adr/README.md)
+  - [Komponenty](architektura2_EDA/komponenty.md)
+  - [Nasazení](architektura2_EDA/nasadenie.md)
+  - [Balíčky](architektura2_EDA/balicky.md)
+  - [Vyhodnocení](architektura2_EDA/vyhodnotenie.md)
