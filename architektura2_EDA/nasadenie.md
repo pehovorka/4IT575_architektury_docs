@@ -1,55 +1,67 @@
-@startuml
+# Nasazení
 
-cloud "Google Cloud Platform" as gcp <<cloud provider>> {
-node "CloudSQL" as cloudsql <<DBaaS environment>> {
-node "PostgreSQL" as pgsql <<DBMS>> {
-database "DB systému hodnocení studentských prog. úloh"
-}
-}
-node "Cloud Run" as run <<execution environment>> {
-node "Web server container" as webServer <<docker container>> {
-artifact "Mediátor" <<application>>
-}
-node "Runtime enviroments" as enviroments {
-node "Node.js runtime env container" as nodeEnv <<docker container>>{
-artifact "Aplikace node.js runtime" <<application>>
-}
-node "Python runtime env container" as pythonEnv <<docker container>>{
-artifact "Aplikace Python runtime" <<application>>
-}
-node "Java runtime env container" as javaEnv <<docker container>>{
-artifact "Aplikace Java runtime" <<application>>
-}
-}
+## UML diagram nasazení
 
-    }
-    node "Firebase Hosting" as firebase <<execution environment>> {
-        artifact "Frontend React aplikace" <<application>>
-    }
+![Deployment diagram](/assets/diagrams/out/eda/deployment/deployment.png)
 
-    node "Cloud Storage" as storage <<storage>> {
-        storage "Úložiště"
-    }
+## Katalog elementů
 
-}
+### Zařízení uživatele aplikace
 
-node "Zařízení uživatele aplikace" as userDevice
-node "Server studijího IS" as studyISServer
-node "Server TurnItIn" as turnitinServer
+Zařízení s webovým prohlížečem.
 
-enviroments -- storage : WebSocket
-enviroments -right- webServer : WebSocket
+### Server studijního IS
 
-webServer -- cloudsql : WebSocket
+Server, na kterém běží centrální studijní IS.
 
-firebase -- userDevice : WebSocket
-webServer -- studyISServer : WebSocket
-webServer -- turnitinServer : WebSocket
-webServer -- firebase : WebSocket
+### Server TurnItIn
 
-cloudsql -[hidden]- firebase
-cloudsql -[hidden]- run
+Server, na kterém antiplagiátorská služba.
 
-webServer -- storage : WebSocket
+### Google Cloud Platform
 
-@enduml
+Sada služeb pro cloud computing od společnosti Google.
+
+### Cloud Run
+
+„Serverless“ prostředí pro běh Docker kontejnerů s vysokou škálovatelností.
+
+### Web API container
+
+Docker kontejner, ve kterém běží aplikace webového API.
+
+### Web server container
+
+Node.js aplikace webového serveru, která působí jako mediátor a reaguje na zprávy z React aplikace. Obsahuje veškerou business logiku systému pro automatické hodnocení studentských programovacích úloh.
+
+### Runtimes containers
+
+Docker kontejnery, ve kterých běží Node.js, Python a Java prostředí pro exekuci a vyhodnocení studentských programovacích úloh.
+
+### Cloud SQL
+
+Databáze jako služba (DBaaS).
+
+### PostgreSQL
+
+Open-source databázový systém.
+
+### DB systému hodnocená studentských prog. úloh
+
+Databáze sloužící k uložení dat o jednotlivých zadáních, bězích a podobně.
+
+### Firebase Hosting
+
+Web hosting vhodný pro single-page aplikace.
+
+### Frontend React aplikace
+
+Single-page aplikace vytvořená pomocí JS knihovny React, která komunikuje s webovým API pomocí dotazovacího jazyka GraphQL. Statické soubory jsou uloženy na Firebase Hostingu a samotná aplikace běží ve webovém prohlížeči uživatele.
+
+### Cloud Storage
+
+Webová služba úložiště.
+
+## Kód diagramu
+
+PlantUML kód je k dispozici [zde](/assets/diagrams/src/eda/deployment.puml).
