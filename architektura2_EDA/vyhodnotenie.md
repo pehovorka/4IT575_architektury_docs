@@ -1,4 +1,4 @@
-# Vyhodnocení architektury EDA DOPLNIT
+# Vyhodnocení architektury EDA
 
 | charakteristika         | hodnocení | váha     | celkem    | komentář                                                                                                                                                                                                                                                                                                                                                                         |
 | ----------------------- | --------- | -------- | --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -30,4 +30,4 @@
 
 Celkové hodnocení architektury EDA při zohlednění vah jednotlivých charakteristik: 14,93 / 16,3 = **91,6 %**
 
-Architektura EDA
+Architektura EDA se ukázala podobně vhodná jako SOA. Oproti SOA je tato architektura o něco komplexnější. Tato přidaná komplexita ale z našeho pohledu nepřináší pro naše případy užití významné benefity. Ideální řešení by dle nás mělo ležet někde mezi SOA a EDA a principy obou architektur vhodně kombinovat.
