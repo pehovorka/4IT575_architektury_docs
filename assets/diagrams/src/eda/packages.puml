@@ -1,0 +1,65 @@
+@startuml
+package "frontendApp" as frontendApp {
+    folder components as FEComponents
+    folder hooks as hooks
+    folder styles as styles
+    folder services as FEServices
+    folder constants as FEConstants
+    folder translations as translations
+    folder config as FEConfig
+    folder tests as FETests
+    folder routes as FERoutes
+    folder utils as FEUtils
+}
+
+package "webAPI" as apiApp {
+    folder services as BEServices
+    folder constants as BEConstants
+    folder config as BEConfig
+    folder scripts as scripts
+    folder tests as BETests
+    folder mediator as mediator
+    folder utils as BEUtils
+    folder migrations as migrations
+    folder seeds as seeds
+    folder monitoring as BEMonitoring
+}
+
+package "node/python/javaRuntime" as envRuntime {
+    folder services as runtimeServices
+    folder tests as runtimeTests
+    folder utils as runtimeUtils
+    folder constants as runtimeConstants
+    folder config as runtimeConfig
+    folder monitoring as runtimeMonitoring
+}
+
+package "shared" as sharedRepo {
+    folder types
+}
+
+package "db" as db {
+    folder tables
+    folder users
+    folder indexes
+}
+
+package "cloudLogging" as logging {
+    folder logger
+}
+
+
+frontendApp ..> sharedRepo: <<use>>
+apiApp ..> sharedRepo: <<use>>
+
+frontendApp ..> logging: <<use>>
+apiApp ..> logging: <<use>>
+
+apiApp ..> db: <<use>>
+
+frontendApp .up.> apiApp: <<use>>
+
+apiApp .right.> envRuntime: <<use>>
+
+
+@enduml
