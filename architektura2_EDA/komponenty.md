@@ -6,11 +6,13 @@
 
 ## Katalog elementů
 
+### Webový server
+
+- **Mediátor** – přijímá eventy, které následně distribuuje k jednotlivým komponentám, které jsou zodpovědné za jejich zpracování.
+
 ### Aplikačný server
 
 Node.js aplikace webového serveru, která se stará o komunikaci s frontendovou React aplikací. Obsahuje veškerou business logiku systému pro automatické hodnocení studentských programovacích úloh.
-
-- **GraphQL server** – služba, která poskytuje _GraphQL endpoint_, jakožto rozhraní pro komunikaci s frontendovou aplikací.
 
 - **Auth služba** – stará se o autentizaci a autorizaci uživatelů. Data o uživatelích získává ze _single sign-on API Studijního IS univerzity_.
 
