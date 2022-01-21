@@ -2,8 +2,8 @@
 
 | charakteristika         | hodnocení | váha     | celkem  | komentář                                                                                                                                                |
 | ----------------------- | --------- | -------- | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Dostupnost              | 1,0       | 0,9      | 0,9     | ???                                                                                                                                                     |
-| Kontinuita              | 0,0       | 1,0      | 0,0     | ??                                                                                                                                                      |
+| Dostupnost              | 1,0       | 0,9      | 0,9     |Zajištění dostupnosti díky cloudovému řešení.                                                                                                                                                      |
+| Kontinuita              | 0,5       | 1,0      | 0,5     | Kontinuita zajištěna cloudovým řešením.                                                                                                                                                       |
 | Výkonnost               | 0,0       | 0,5      | 0,0     | ??                                                                                                                                                      |
 | Zotavitelnost           | 0,0       | 0,7      | 0,0     | Viz komentář k dostupnosti výše.                                                                                                                        |
 | Spolehlivost/bezpečnost | 0,0       | 0,8      | 0,0     | Systém musí být spolehlivý, aby byly zajištěny rovné příležitosti úspěšného odevzdání prací pro všechny studenty.                                       |
